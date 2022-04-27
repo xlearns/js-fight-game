@@ -15,6 +15,7 @@ export default class Sprite{
   update(){
     this.draw()
     this.position.y += this.velcoity.y
+    this.position.x += this.velcoity.x
     if(this.position.y + this.height + this.velcoity.y>=canvas.height){
       this.velcoity.y = 0
     }else{
